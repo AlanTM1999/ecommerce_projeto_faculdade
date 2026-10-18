@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
 :root{
-
+  --vertice-50: #F2F2F2;
+  --vertice-100: #999999;
+  --vertice-200: #767676;
+  --vertice-300: #0E0E0E;
+  --vertice-400: #1A1A1A;
 }
 
 @theme {
@@ -9,9 +13,17 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
   --font-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --color-vertice-50: var(--vertice-50);
+  --color-vertice-100: var(--vertice-100);
+  --color-vertice-200: var(--vertice-200);
+  --color-vertice-300: var(--vertice-300);
+  --color-vertice-400: var(--vertice-400);
+
+  --text-base: 12px;
 }
 
 html,
 body {
-  @apply font-helvetica;
+  @apply font-helvetica bg-vertice-300 text-vertice-50;
 }

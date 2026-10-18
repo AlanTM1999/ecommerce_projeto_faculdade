@@ -1,3 +1,4 @@
+import ClientHero from "~/components/client-component/Client.Hero";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
@@ -9,6 +10,8 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <div>VERTÍCE</div>
+    <div>
+      <ClientHero/>
+    </div>
   );
 }
