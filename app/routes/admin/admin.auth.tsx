@@ -1,5 +1,7 @@
 export default function admin_auth() {
     return (
-        <div></div>
+        <div>
+            admin auth
+        </div>
     );
 }

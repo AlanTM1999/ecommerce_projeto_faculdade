@@ -1,5 +1,5 @@
 export default function auth() {
     return (
-        <div></div>
+        <div>he</div>
     );
 }

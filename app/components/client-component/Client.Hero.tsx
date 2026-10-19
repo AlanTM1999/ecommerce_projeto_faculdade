@@ -2,7 +2,7 @@ import Button from "../Button";
 
 export default function ClientHero() {
     return (
-        <div>
+        <section>
             <div>
                 <div>eyebrow</div>
                 <h1>
@@ -14,6 +14,6 @@ export default function ClientHero() {
                 <Button type="button" className="cursor-pointer" variant="outline">Teste</Button>
             </div>
             <div></div>
-        </div>
+        </section>
     );
 }
