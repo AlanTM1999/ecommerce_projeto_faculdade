@@ -21,9 +21,21 @@
   --color-vertice-400: var(--vertice-400);
 
   --text-base: 12px;
+  --text-sm: 11px;
+  --text-xs: 10px;
 }
 
 html,
 body {
-  @apply font-helvetica bg-vertice-300 text-vertice-50;
+  @apply
+  font-helvetica
+  bg-vertice-300
+  text-vertice-50;
+}
+
+button,
+input,
+textarea{
+  @apply
+  outline-none;
 }
