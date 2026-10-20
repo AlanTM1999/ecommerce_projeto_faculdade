@@ -1,6 +1,5 @@
 import ClientHero from "~/components/client-component/Client.Hero";
 import type { Route } from "./+types/home";
-import ClientNavSection from "~/components/client-component/Client.NavSection";
 import ClientSection from "~/components/client-component/Client.Section";
 import { ClientProductCard, ClientProducts } from "~/components/client-component/Client.Products";
 
@@ -15,7 +14,6 @@ export default function Home() {
   return (
     <div>
       <ClientHero/>
-      <ClientNavSection/>
       <ClientSection title="Mais vendidos" id="novidade">
         <ClientProducts>
           {Array.from({ length: 3 }, (_, i) => i+1).map((n) => (
