@@ -13,7 +13,7 @@ export default function ClientSection({ title, to, children, ...props }: ClientP
         <section {...props}>
             <Container>
                 <div>
-                    <h2>{title}</h2>
+                    <h2 className="tracking-[.08em] uppercase">{title}</h2>
                     {to && (<Link to={to}>Ver tudo</Link>)}
                 </div>
                 {children}

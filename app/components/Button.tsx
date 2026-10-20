@@ -8,7 +8,7 @@ const variants:Record<VariantKeys, string> = {
     "outline": "text-vertice-50 bg-vertice-300 border-vertice-50"
 }
 
-interface ButtonProps extends ComponentProps<"button"> {
+export interface ButtonProps extends ComponentProps<"button"> {
     ref?: Ref<HTMLButtonElement>;
     variant?: VariantKeys;
 }
