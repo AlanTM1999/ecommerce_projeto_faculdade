@@ -10,10 +10,10 @@ interface ClientProductsProps extends Omit<ComponentProps<"section">, "className
 
 export default function ClientSection({ title, to, children, ...props }: ClientProductsProps) {
     return (
-        <section {...props}>
+        <section className="mt-15" {...props}>
             <Container>
-                <div>
-                    <h2 className="tracking-[.08em] uppercase">{title}</h2>
+                <div className="mb-6">
+                    <h2 className="tracking-[.08em] uppercase font-bold">{title}</h2>
                     {to && (<Link to={to}>Ver tudo</Link>)}
                 </div>
                 {children}

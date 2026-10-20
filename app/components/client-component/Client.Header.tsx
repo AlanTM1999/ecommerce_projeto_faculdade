@@ -5,7 +5,7 @@ import { ClientNavigate, ClientNavLink } from "./Client.Navigate";
 export default function ClientHeader(){
     const { pathname } = useLocation();
     return (
-        <header className="flex items-center border-b border-vertice-400 max-w-full sticky top-0 left-0 right-0">
+        <header className="flex items-center border-b border-vertice-400 max-w-full sticky top-0 left-0 right-0 bg-vertice-300">
             <Container>
                 <nav className="flex items-center justify-between">
                     <ClientNavigate className="hidden lg:flex">

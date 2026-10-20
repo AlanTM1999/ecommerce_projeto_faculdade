@@ -32,12 +32,16 @@ function ClientCartProvider({ children }:ClientCartProviderProps){
 
 function ClientCartQT(){
 
-    const ButtonQT = (props:Omit<ButtonProps, "className">) => <Button className="w-full max-w-8 h-8 p-0!" {...props}/>
+    const ButtonQT = (props:Omit<ButtonProps, "className">) => <Button className="w-full max-w-6 h-6 p-0!" {...props}/>
 
     return (
         <div className="flex items-center">
             <ButtonQT>-</ButtonQT>
-            <input type="number" className="w-full max-w-18 h-8 px-1.5 border-y border-vertice-100 text-center" value={0}/>
+            <input
+                type="number"
+                className="w-full max-w-15 h-6 px-1.5 bg-vertice-400 text-center text-base"
+                value={0}
+            />
             <ButtonQT>+</ButtonQT>
         </div>
     )
@@ -64,7 +68,7 @@ function ClientCartItem(){
                     className="max-w-20.5 h-auto"
                 />
                 <div className="space-y-2.5">
-                    <b className="uppercase block">camiseta essential preta</b>
+                    <b className="uppercase block truncate">camiseta essential preta</b>
                     <div className="text-vertice-200 text-base">Tamanho M</div>
                     <ClientCartQT/>
                 </div>
@@ -81,7 +85,13 @@ function ClientCartPrices(){
     return (
         <div className="border border-vertice-100 p-3.5">
             <ClientGroup label="resumo">
-                <li className="border-t uppercase flex items-center justify-between pt-3.5">
+                {Array.from({ length: 2 }, (_,i) => i+90).map((val, index) => (
+                    <li key={val} className="flex items-center justify-between pb-3.5 text-base font-bold">
+                        <span>produto {index+1}</span>
+                        <span>{coin(val)}</span>
+                    </li>
+                ))}
+                <li className="border-t uppercase flex items-center justify-between pt-3.5 font-bold">
                     <span>Total</span>
                     <span>{coin(0)}</span>
                 </li>

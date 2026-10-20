@@ -12,13 +12,13 @@ type ClientProductCardProps = {
 }
 function ClientProductCard({ cover, categorie, product_name, price }:ClientProductCardProps){
     return (
-        <div>
-            <img src={cover} height={405} width={304} alt="" className="w-full h-auto"/>
-            <div>{categorie}</div>
-            <Link to="/">{product_name}</Link>
-            <div>
+        <div className="uppercase space-y-2">
+            <img src={cover} height={405} width={304} alt="" className="w-full h-auto block mb-4"/>
+            <div className="uppercase text-base text-vertice-100">{categorie}</div>
+            <Link className="block truncate" to="/">{product_name}</Link>
+            <div className="flex items-center gap-3">
                 <span>{coin(!price[1] ? price[0]: price[1])}</span>
-                {price[1] && <span className="line-through">{coin(price[0])}</span>}
+                {price[1] && <span className="line-through text-vertice-100">{coin(price[0])}</span>}
             </div>
         </div>
     )

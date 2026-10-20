@@ -1,6 +1,13 @@
 import { ClientCartItems, ClientCartPrices, ClientCartProvider } from "~/components/client-component/Client.Cart";
 import ClientMain from "~/components/client-component/Client.Main";
 import Container from "~/components/Container";
+import type { Route } from "./+types/cart";
+
+export function meta({}:Route.MetaArgs){
+    return [
+        { title: "Carrinho" }
+    ]
+}
 
 export default function cart() {
     return (
