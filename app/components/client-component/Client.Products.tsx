@@ -13,7 +13,7 @@ type ClientProductCardProps = {
 function ClientProductCard({ cover, categorie, product_name, price }:ClientProductCardProps){
     return (
         <div>
-            <img src={cover} height={405} width={304} alt=""/>
+            <img src={cover} height={405} width={304} alt="" className="w-full h-auto"/>
             <div>{categorie}</div>
             <Link to="/">{product_name}</Link>
             <div>
@@ -25,15 +25,14 @@ function ClientProductCard({ cover, categorie, product_name, price }:ClientProdu
 }
 
 type ClientProductsProps = {
-    children?:ReactNode
+    children?:ReactNode;
+    cols?:4 | 3;
 }
-function ClientProducts({ children }:ClientProductsProps) {
+function ClientProducts({ children, cols=4 }:ClientProductsProps) {
     return (
-        <Container>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
-                {children}
-            </div>
-        </Container>
+        <div className={`w-full grid grid-cols-1 gap-3 sm:grid-cols-2 ${cols === 3 ? "md:grid-cols-3" : "md:grid-cols-4"}`}>
+            {children}
+        </div>
     );
 }
 

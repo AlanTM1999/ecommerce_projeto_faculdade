@@ -5,10 +5,10 @@ import { ClientNavigate, ClientNavLink } from "./Client.Navigate";
 export default function ClientHeader(){
     const { pathname } = useLocation();
     return (
-        <header className="py-6 border-b border-vertice-400">
+        <header className="flex items-center border-b border-vertice-400 max-w-full">
             <Container>
                 <nav className="flex items-center justify-between">
-                    <ClientNavigate>
+                    <ClientNavigate className="hidden lg:flex">
                         <ClientNavLink to={`/#novidade`}>novidades</ClientNavLink>
                         <ClientNavLink to={`/#masculino`}>masculino</ClientNavLink>
                         <ClientNavLink to={`/#feminino`}>feminino</ClientNavLink>
@@ -16,7 +16,7 @@ export default function ClientHeader(){
                         <ClientNavLink to={`/#outlet`}>outlet</ClientNavLink>
                     </ClientNavigate>
                     <Link to="/">LOGO</Link>
-                    <ClientNavigate>
+                    <ClientNavigate className="hidden lg:flex">
                         <ClientNavLink to="/search">buscar</ClientNavLink>
                         <ClientNavLink to="/auth">conta</ClientNavLink>
                         <ClientNavLink to="/cart">carrinho</ClientNavLink>

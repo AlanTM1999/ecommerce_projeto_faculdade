@@ -4,9 +4,11 @@ import ClientHeader from '~/components/client-component/Client.Header';
 
 export default function ClientLayout() {
     return (
-        <div className="grid grid-rows-[auto_1fr_auto]">
+        <div className="grid grid-rows-[65px_1fr_auto] grid-cols-1 min-h-dvh w-dvw">
             <ClientHeader/>
-            <Outlet/>
+            <div className=''>
+                <Outlet/>
+            </div>
             <ClientFooter/>
         </div>
     );

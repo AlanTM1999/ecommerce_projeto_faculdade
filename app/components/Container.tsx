@@ -5,5 +5,5 @@ export interface ContainerProps {
 }
 
 export default function Container(props: ContainerProps) {
-    return <div className="px-3 lg:px-6" {...props}/>;
+    return <div className="w-full mx-auto px-3 lg:px-6" {...props}/>;
 }
