@@ -45,7 +45,7 @@ export default function AdminLayout() {
                     </ul>
                 </aside>
             </div>
-            <div className="py-8">
+            <div className="py-15">
                 <Container>
                     <Outlet/>
                 </Container>

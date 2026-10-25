@@ -5,7 +5,7 @@ import Button from "~/components/Button";
 
 export function meta({}:Route.MetaArgs){
     return [
-        { title: "Auth" }
+        { title: "Vértice | Conta" }
     ]
 }
 

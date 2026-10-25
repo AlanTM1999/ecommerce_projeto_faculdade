@@ -1,3 +1,4 @@
+import AdminPage from "~/components/admin-component/AdminPage";
 import type { Route } from "./+types/admin";
 
 export function meta({}:Route.MetaArgs){
@@ -8,8 +9,8 @@ export function meta({}:Route.MetaArgs){
 
 export default function admin() {
     return (
-        <div>
-            h
-        </div>
+        <AdminPage page="Visão geral" description="Resumo da loja nos últimos 7 dias">
+
+        </AdminPage>
     );
 }

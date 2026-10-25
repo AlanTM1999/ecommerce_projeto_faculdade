@@ -23,5 +23,5 @@ export default [
         route("clients", "routes/admin/admin.clients.tsx")
     ]),
 
-    route("/api/auth", "routes/api/auth.tsx"), 
+    route("/api/auth", "routes/api/auth.tsx"),
 ] satisfies RouteConfig;
