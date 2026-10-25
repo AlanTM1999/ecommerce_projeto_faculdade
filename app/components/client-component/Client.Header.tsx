@@ -15,7 +15,7 @@ export default function ClientHeader(){
                         <ClientNavLink to={`/#acessorio`}>acessório</ClientNavLink>
                         <ClientNavLink to={`/#outlet`}>outlet</ClientNavLink>
                     </ClientNavigate>
-                    <Link to="/">LOGO</Link>
+                    <Link to="/" className="uppercase font-bold text-2xl tracking-widest">vértice</Link>
                     <ClientNavigate className="hidden lg:flex">
                         <ClientNavLink to="/search">buscar</ClientNavLink>
                         <ClientNavLink to="/auth">conta</ClientNavLink>
