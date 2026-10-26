@@ -6,6 +6,9 @@
   --vertice-200: #767676;
   --vertice-300: #0E0E0E;
   --vertice-400: #1A1A1A;
+  --vertice-500: #b7791f;
+  --vertice-600: #1f8a4c;
+  --vertice-700: #1f758a;
 }
 
 @theme {
@@ -19,6 +22,9 @@
   --color-vertice-200: var(--vertice-200);
   --color-vertice-300: var(--vertice-300);
   --color-vertice-400: var(--vertice-400);
+  --color-vertice-500: var(--vertice-500);
+  --color-vertice-600: var(--vertice-600);
+  --color-vertice-700: var(--vertice-700);
 
   --text-base: 12px;
   --text-sm: 11px;

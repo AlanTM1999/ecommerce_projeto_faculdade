@@ -8,6 +8,7 @@ export default [
         route("/cart", "routes/cart.tsx"),
         route("/checkout", "routes/checkout.tsx"),
         route("/confirm", "routes/confirm.tsx"),
+        route("/account", "routes/account.tsx"),
         route("/product/:slug", "routes/product.tsx")
     ]),
 
